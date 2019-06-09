@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Paper from "@material-ui/core/Paper";
+import AppBar from "@material-ui/core/AppBar";
+import ToolBar from "@material-ui/core/ToolBar";
+import Grid from "@material-ui/core/Grid";
+import Typography from "@material-ui/core/Typography";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-        Demo change
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Paper
+      style={{
+        padding: 0,
+        margin: 0,
+        height: "100vh",
+        backroundColor: "fafafa"
+      }}
+      elevation={0}
+    >
+      <AppBar color="primary" position="static" style={{ height: "64px" }}>
+        <ToolBar>
+          <Typography color="inherit">TODOS WITH HOOKS</Typography>
+        </ToolBar>
+      </AppBar>
+    </Paper>
   );
 }
 
